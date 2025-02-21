@@ -55,3 +55,6 @@ pids
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+#hide config file
+src/config/weakest-programmer-golden-era-firebase-adminsdk-fbsvc-228b94655d.json
+
