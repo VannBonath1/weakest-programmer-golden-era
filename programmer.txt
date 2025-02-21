@@ -1,0 +1,9 @@
+programmer
+1 set up firebase in nest
+2 create user sign up store user in firebase
+ - when sign up there are field like programmerName, password, and automatically set there status to rank to the-weakest,grade-one-bug-magnet,special-debug-team,code-sorcerer,the-strongest
+3 account login
+- create user account and god account
+4 approval request update there rank
+ - api for user to request update by requesting
+ - api for god account to approve request
