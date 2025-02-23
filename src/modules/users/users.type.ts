@@ -1,4 +1,4 @@
-import { IsEnum, IsString } from 'class-validator';
+import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 enum Rank {
   TheWeakest = 'TheWeakest',
@@ -8,9 +8,17 @@ enum Rank {
 }
 
 export class CreateUserDTO {
+  @IsNotEmpty()
   @IsString()
   programmerName: string;
 
+  @IsNotEmpty()
   @IsEnum(Rank)
   rank: Rank;
+}
+
+export class UpdateProfileDTO {
+  @IsOptional()
+  @IsEnum(Rank)
+  rank?: Rank;
 }

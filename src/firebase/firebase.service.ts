@@ -9,7 +9,7 @@ dotenv.config();
 export class FirebaseService {
   private database: admin.database.Database;
 
-  firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG as string);
+  firebaseConfig = JSON.parse(process.env.FIREBASE_ADMIN_SDK as string);
 
   constructor() {
     // Prevent multiple Firebase initializations

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { FirebaseService } from '../../firebase/firebase.service';
-import { CreateUserDTO } from './users.type';
+import { CreateUserDTO, UpdateProfileDTO } from './users.type';
 import * as admin from 'firebase-admin';
 
 @Injectable()
@@ -19,4 +19,6 @@ export class UsersService {
     const snapshot = await userRef.get();
     return snapshot.val();
   }
+
+  async updateProfile(updateProfileDTO: UpdateProfileDTO, firebaseUid) {}
 }
